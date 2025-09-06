@@ -30,7 +30,7 @@ jobs:
             uri: ws://g1.crab2.darwinia.network:9944
     steps:
       - name: Fetch latest code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: refs/pull/${{ github.event.issue.number }}/head
       - name: Try-Runtime
